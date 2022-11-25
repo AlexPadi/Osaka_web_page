@@ -69,7 +69,7 @@
 		  	</div>
 		  	<div class="form-group">
 		    	<label>Foto de perfil</label>
-		    	<input type="file" class="form-control" name="flFoto" required accept=".jpg" />
+		    	<input type="file" class="form-control" name="flFoto" accept=".jpg" />
 			</div>
 		  	<div class="form-group">
 		    	<br>
