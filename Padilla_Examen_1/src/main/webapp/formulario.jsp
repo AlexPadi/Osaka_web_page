@@ -76,7 +76,7 @@
 		    	<br>
 		    	<label>1.	¿En que región se encuentra Osaka? </label>
 		    	<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta1" id="1rd1">
+				  <input class="form-check-input" type="radio" value="Kanto" name="pregunta1" id="1rd1">
 				  <label class="form-check-label" for="1rd1">
 				    Kanto
 				  </label>
@@ -88,7 +88,7 @@
 				  </label>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta1" id="1rd3">
+				  <input class="form-check-input" type="radio" value="Hokkaido" name="pregunta1" id="1rd3">
 				  <label class="form-check-label" for="1rd3">
 				    Hokkaido
 				  </label>
@@ -98,13 +98,13 @@
 		  		<br>
 		    	<label>2.	¿En qué puesto se encuentra Osaka en su nivel de población como ciudad en Japón? </label>
 		    	<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta2" id="2rd1">
+				  <input class="form-check-input" type="radio" value="Es la mas poblada de Japón" name="pregunta2" id="2rd1">
 				  <label class="form-check-label" for="2rd1">
 				    Es la mas poblada de Japón
 				  </label>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta2" id="2rd2">
+				  <input class="form-check-input" type="radio" value="Es la segunda poblada de Japón" name="pregunta2" id="2rd2">
 				  <label class="form-check-label" for="2rd2">
 				    Es la segunda poblada de Japón
 				  </label>
@@ -120,13 +120,13 @@
 		  		<br>
 		    	<label>3.	¿Cuál de estos platos típicos, son más característicos de Osaka?</label>
 		    	<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta3" id="3rd1">
+				  <input class="form-check-input" type="radio" value="Sushi" name="pregunta3" id="3rd1">
 				  <label class="form-check-label" for="3rd1">
 				    Sushi
 				  </label>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta3" id="3rd2">
+				  <input class="form-check-input" type="radio" value="Ramen" name="pregunta3" id="3rd2">
 				  <label class="form-check-label" for="3rd2">
 				    Ramen
 				  </label>
@@ -148,13 +148,13 @@
 				  </label>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta4" id="4rd2">
+				  <input class="form-check-input" type="radio" value="El castillo de Nijo" name="pregunta4" id="4rd2">
 				  <label class="form-check-label" for="4rd2">
 				    El castillo de Nijo
 				  </label>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta4" id="4rd3">
+				  <input class="form-check-input" type="radio" value="Templo Sensoji" name="pregunta4" id="4rd3">
 				  <label class="form-check-label" for="4rd3">
 				     Templo Sensoji
 				  </label>
@@ -164,13 +164,13 @@
 		  		<br>
 		    	<label>5.	¿Cuál de las siguientes opciones es una característica de Dotombori?</label>
 		    	<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta5" id="5rd1">
+				  <input class="form-check-input" type="radio" value="Es la mas poblada de Japón" name="pregunta5" id="5rd1">
 				  <label class="form-check-label" for="5rd1">
 				    Es la mas poblada de Japón
 				  </label>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="radio" value="0" name="pregunta5" id="5rd2">
+				  <input class="form-check-input" type="radio" value="Rascacielos" name="pregunta5" id="5rd2">
 				  <label class="form-check-label" for="5rd2">
 				    Rascacielos
 				  </label>
