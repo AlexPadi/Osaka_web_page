@@ -2,30 +2,36 @@ package com.osaka.negocio;
 import java.io.File;
 import java.io.FileInputStream;
 import java.sql.*;
+import java.util.Objects;
+
 import com.osaka.datos.*;
 
 
 public class Formulario {
 	private int id_us;
 	private int total;
-	private String p[];
 	
 	public Formulario() {
-		p[0]= "Kansai";
-		p[1]= "Es la tercera mas poblada de Japón";
-		p[2]= "Takoyaki";
-		p[3]= "Torre de Tsutenkaku";
-		p[4]= "Luces brillantes y letreros de neón";
 		this.total = 0;
 	}
 	
 	public void setResultado(String p1,String p2,String p3,String p4,String p5, String us_nombre) {
-		String r[] = {p1,p2,p3,p4,p5};
-		for(int i=0; i>5;i++) {
-			if(p[i]==r[i]) {
-				this.total++;
-			}
+		if(p1.equals("Kansai")) {
+			this.total+=1;
 		}
+		if(p2.equals("Es la tercera mas poblada de Japón")) {
+			this.total+=1;
+		}
+		if(p3.equals("Takoyaki")) {
+			this.total+=1;
+		}
+		if(p4.equals("Torre de Tsutenkaku")) {
+			this.total+=1;
+		}
+		if(p5.equals("Luces brillantes y letreros de neón")) {
+			this.total+=1;
+		}
+		
 		Usuario us = new Usuario();
 		this.id_us = us.mostrarIdUsuario(us_nombre);
 		ingresarProducto(p1,p2,p3,p4,p5);
@@ -36,9 +42,9 @@ public class Formulario {
 		String tabla = "<table class=\"table\" border=1>"; 
 		 String sql = "select nombre_us,total_fr from tb_form, tb_usuario\r\n"
 		 				+ "where tb_form.id_us = tb_usuario.id_us\r\n"
-		 				+ "order by total_fr;"; 
+		 				+ "order by total_fr desc;"; 
 		 ResultSet rs = null; 
-		 tabla += "<tr>" + "<th>Nombre</th>" + "<<th>Puntos</th>" + "</tr>"; 
+		 tabla += "<tr>" + "<th><pre style=\"text-align: center\">Nombre</pre></th>" + "<<th><pre style=\"text-align: center\">Puntos</pre></th>" + "</tr>"; 
 		 Conexion con= new Conexion(); 
 		 try { 
 			 rs= con.Consulta (sql); 
@@ -69,7 +75,7 @@ public class Formulario {
 				pr.setString(3, p2);
 				pr.setString(4, p3);
 				pr.setString(5, p4);
-				pr.setString(6, p4);
+				pr.setString(6, p5);
 				pr.setInt(7, total);
 				if(pr.executeUpdate()==1)
 				{
