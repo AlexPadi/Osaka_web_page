@@ -44,7 +44,7 @@ public class Formulario {
 		 				+ "where tb_form.id_us = tb_usuario.id_us\r\n"
 		 				+ "order by total_fr desc;"; 
 		 ResultSet rs = null; 
-		 tabla += "<tr>" + "<th><pre style=\"text-align: center\">Nombre</pre></th>" + "<<th><pre style=\"text-align: center\">Puntos</pre></th>" + "</tr>"; 
+		 tabla += "<tr>" + "<th><pre style=\"text-align: center\">Nombre</pre></th>" + "<th><pre style=\"text-align: center\">Puntos</pre></th>" + "</tr>"; 
 		 Conexion con= new Conexion(); 
 		 try { 
 			 rs= con.Consulta (sql); 
