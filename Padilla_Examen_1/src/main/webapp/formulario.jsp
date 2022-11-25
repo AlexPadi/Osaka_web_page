@@ -186,6 +186,12 @@
 		    <br>
 		  	<button type="submit" class="btn btn-primary">Enviar Respuestas</button>
 		</form>
+		<%Formulario f = new Formulario(); %>
+		<br>
+		<hr class="featurette-divider">
+		<br>
+		<h2 class="featurette-heading fw-normal lh-1">Tabla de posiciones:</h2>
+		<%out.print(f.consultarTodo());%>
 	</div>
 </main>
 </body>
