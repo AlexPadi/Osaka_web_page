@@ -60,11 +60,16 @@
 		<%
 		String nombre = request.getParameter("txt_nombre");
 		String foto = request.getParameter("flFoto");
-		String p1 = request.getParameter("pregunta1");
-		String p2 = request.getParameter("pregunta2");
-		String p3 = request.getParameter("pregunta3");
-		String p4 = request.getParameter("pregunta4");
-		String p5 = request.getParameter("pregunta5");
+		String p1 = "";
+		String p2 = "";
+		String p3 = "";
+		String p4 = "";
+		String p5 = "";
+		p1 = request.getParameter("pregunta1");
+		p2 = request.getParameter("pregunta2");
+		p3 = request.getParameter("pregunta3");
+		p4 = request.getParameter("pregunta4");
+		p5 = request.getParameter("pregunta5");
 		Usuario u = new Usuario();
 		u.ingresarUsuario(nombre, foto);
 		Formulario f = new Formulario();
