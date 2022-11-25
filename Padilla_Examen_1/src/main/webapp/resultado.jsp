@@ -75,7 +75,7 @@
 		Formulario f = new Formulario();
 		f.setResultado(p1, p2, p3, p4, p5, nombre);
 		%>
-		<h1 class="featurette-heading fw-normal lh-1"><%out.print(f.getTotal());%></h1>
+		<h1 class="featurette-heading fw-normal lh-1"><%out.print(f.getTotal());%>/5</h1>
 		<hr class="featurette-divider">
 		<h2 class="featurette-heading fw-normal lh-1">Tabla de posiciones:</h2>
 		<%out.print(f.consultarTodo());%>
